@@ -1,11 +1,15 @@
 package classifier;
 
+import history.ClassifierHistory;
+import history.HistoryMetricsBean;
+import moa.classifiers.Classifier;
 import moa.evaluation.BasicClassificationPerformanceEvaluator;
 import moa.evaluation.LearningCurve;
 import moa.streams.ArffFileStream;
 import moa.tasks.EvaluatePrequential;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -32,8 +36,9 @@ public class StreamClassifier {
         task.prepareForUse();
 
         LearningCurve learningCurve = (LearningCurve) task.doTask();
-        ClassifierHistory newEntry = new ClassifierHistory(classifier, learningCurve);
-        evaluationHistory.add(newEntry);
+        compileModelHistory(classifier, learningCurve);
+        System.out.println("Single model evaluation:");
+        System.out.println(learningCurve);
     }
 
     public void compareModels() {
@@ -41,7 +46,7 @@ public class StreamClassifier {
             return;
         }
         for (ClassifierHistory entry : evaluationHistory) {
-            System.out.println(entry.getLearningCurve());
+            System.out.println("Accuracy: " + entry.getHistoryMetricsBean().getCorrectClassifications().get(5));
         }
     }
 
@@ -52,6 +57,49 @@ public class StreamClassifier {
         arffStream.classIndexOption.setValue(55);
         arffStream.prepareForUse();
         return arffStream;
+    }
+
+
+    private void compileModelHistory(Classifier classifier, LearningCurve learningCurve) {
+        List<Double> learningEvaluationInstances = new ArrayList<>();
+        List<Double> evaluationTime = new ArrayList<>();
+        List<Double> modelCost = new ArrayList<>();
+        List<Double> classifiedInstances = new ArrayList<>();
+        List<Double> correctClassifications = new ArrayList<>();
+        List<Double> kappaStatistic = new ArrayList<>();
+        List<Double> kappaTemporalStatistic = new ArrayList<>();
+        List<Double> kappaMStatistic = new ArrayList<>();
+        List<Double> modelTrainingInstances = new ArrayList<>();
+        List<Double> modelSerializedSize = new ArrayList<>();
+
+        for(int i = 0; i < learningCurve.numEntries(); i++) {
+            List<String> values = Arrays.asList(learningCurve.entryToString(i).split("\\s*,\\s*"));
+            learningEvaluationInstances.add(Double.parseDouble(values.get(0)));
+            evaluationTime.add(Double.parseDouble(values.get(1)));
+            modelCost.add(Double.parseDouble(values.get(2)));
+            classifiedInstances.add(Double.parseDouble(values.get(3)));
+            correctClassifications.add(Double.parseDouble(values.get(4)));
+            kappaStatistic.add(Double.parseDouble(values.get(5)));
+            kappaTemporalStatistic.add(Double.parseDouble(values.get(6)));
+            kappaMStatistic.add(Double.parseDouble(values.get(7)));
+            modelTrainingInstances.add(Double.parseDouble(values.get(8)));
+            modelSerializedSize.add(Double.parseDouble(values.get(9)));
+        }
+
+        HistoryMetricsBean hmb = new HistoryMetricsBean(
+                learningEvaluationInstances,
+                evaluationTime,
+                modelCost,
+                classifiedInstances,
+                correctClassifications,
+                kappaStatistic,
+                kappaTemporalStatistic,
+                kappaMStatistic,
+                modelTrainingInstances,
+                modelSerializedSize
+        );
+        ClassifierHistory newEntry = new ClassifierHistory(classifier, learningCurve, hmb);
+        evaluationHistory.add(newEntry);
     }
 
     private List<ClassifierHistory> getEvaluationHistory() {
