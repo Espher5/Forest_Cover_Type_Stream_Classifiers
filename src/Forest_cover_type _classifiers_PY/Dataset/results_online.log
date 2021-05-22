@@ -1,0 +1,180 @@
+Classifier info: AdaptiveRandomForestClassifier(binary_split=False, disable_weighted_vote=False,
+                               drift_detection_method=ADWIN(delta=0.001),
+                               grace_period=50, lambda_value=6,
+                               leaf_prediction='nba', max_byte_size=33554432,
+                               max_features='auto',
+                               memory_estimate_period=2000000, n_estimators=10,
+                               nb_threshold=0, no_preprune=False,
+                               nominal_attributes=None,
+                               performance_metric='acc', random_state=None,
+                               remove_poor_atts=False, split_confidence=0.01,
+                               split_criterion='info_gain',
+                               stop_mem_management=False, tie_threshold=0.05,
+                               warning_detection_method=ADWIN(delta=0.01))
+Processed 16 samples
+Accuracy: 0.75
+Total time: 2.442220687866211 seconds
+Processed 32 samples
+Accuracy: 0.75
+Total time: 2.575179100036621 seconds
+Processed 48 samples
+Accuracy: 0.7708333333333334
+Total time: 2.7071471214294434 seconds
+Processed 64 samples
+Accuracy: 0.78125
+Total time: 2.862097978591919 seconds
+Processed 80 samples
+Accuracy: 0.7625
+Total time: 3.020047426223755 seconds
+Processed 96 samples
+Accuracy: 0.71875
+Total time: 3.179983139038086 seconds
+Processed 100 samples
+Accuracy: 0.73
+Total time: 3.2169716358184814 seconds
+
+
+Classifier info: NaiveBayes(nominal_attributes=None)
+Processed 16 samples
+Accuracy: 0.5
+Total time: 2.1763107776641846 seconds
+Processed 32 samples
+Accuracy: 0.65625
+Total time: 2.198301315307617 seconds
+Processed 48 samples
+Accuracy: 0.6875
+Total time: 2.2162935733795166 seconds
+Processed 64 samples
+Accuracy: 0.71875
+Total time: 2.249283790588379 seconds
+Processed 80 samples
+Accuracy: 0.7
+Total time: 2.277272939682007 seconds
+Processed 96 samples
+Accuracy: 0.6666666666666666
+Total time: 2.296266555786133 seconds
+Processed 100 samples
+Accuracy: 0.65
+Total time: 2.3022661209106445 seconds
+
+
+Classifier info: HoeffdingTreeClassifier(binary_split=False, grace_period=200,
+                        leaf_prediction='nba', max_byte_size=33554432,
+                        memory_estimate_period=1000000, nb_threshold=0,
+                        no_preprune=False, nominal_attributes=None,
+                        remove_poor_atts=False, split_confidence=1e-07,
+                        split_criterion='info_gain', stop_mem_management=False,
+                        tie_threshold=0.05)
+Processed 16 samples
+Accuracy: 0.5
+Total time: 2.2632758617401123 seconds
+Processed 32 samples
+Accuracy: 0.65625
+Total time: 2.288266897201538 seconds
+Processed 48 samples
+Accuracy: 0.6875
+Total time: 2.3172571659088135 seconds
+Processed 64 samples
+Accuracy: 0.71875
+Total time: 2.3492484092712402 seconds
+Processed 80 samples
+Accuracy: 0.7
+Total time: 2.3882367610931396 seconds
+Processed 96 samples
+Accuracy: 0.6666666666666666
+Total time: 2.4222238063812256 seconds
+Processed 100 samples
+Accuracy: 0.65
+Total time: 2.4292218685150146 seconds
+
+
+Classifier info: HoeffdingTreeClassifier(binary_split=False, grace_period=200,
+                        leaf_prediction='nba', max_byte_size=33554432,
+                        memory_estimate_period=1000000, nb_threshold=0,
+                        no_preprune=False, nominal_attributes=None,
+                        remove_poor_atts=False, split_confidence=1e-07,
+                        split_criterion='info_gain', stop_mem_management=False,
+                        tie_threshold=0.05)
+Processed 1666 samples
+Accuracy: 0.6122448979591837
+Total time: 6.389379501342773 seconds
+Processed 3332 samples
+Accuracy: 0.5573229291716687
+Total time: 14.380889892578125 seconds
+Processed 4998 samples
+Accuracy: 0.5768307322929171
+Total time: 22.74444580078125 seconds
+Processed 6664 samples
+Accuracy: 0.5763805522208884
+Total time: 31.004197359085083 seconds
+Processed 8330 samples
+Accuracy: 0.5920768307322929
+Total time: 36.17699360847473 seconds
+Processed 9996 samples
+Accuracy: 0.6125450180072028
+Total time: 40.1456983089447 seconds
+Processed 10000 samples
+Accuracy: 0.6127
+Total time: 40.15269613265991 seconds
+
+
+Classifier info: NaiveBayes(nominal_attributes=None)
+Processed 1666 samples
+Accuracy: 0.6122448979591837
+Total time: 4.754090785980225 seconds
+Processed 3332 samples
+Accuracy: 0.5573229291716687
+Total time: 8.998253345489502 seconds
+Processed 4998 samples
+Accuracy: 0.5768307322929171
+Total time: 13.741076231002808 seconds
+Processed 6664 samples
+Accuracy: 0.5763805522208884
+Total time: 18.079641580581665 seconds
+Processed 8330 samples
+Accuracy: 0.546578631452581
+Total time: 22.806424617767334 seconds
+Processed 9996 samples
+Accuracy: 0.5389155662264906
+Total time: 27.54186773300171 seconds
+Processed 10000 samples
+Accuracy: 0.539
+Total time: 27.549865007400513 seconds
+
+
+Classifier info: AdaptiveRandomForestClassifier(binary_split=False, disable_weighted_vote=False,
+                               drift_detection_method=ADWIN(delta=0.001),
+                               grace_period=50, lambda_value=6,
+                               leaf_prediction='nba', max_byte_size=33554432,
+                               max_features='auto',
+                               memory_estimate_period=2000000, n_estimators=10,
+                               nb_threshold=0, no_preprune=False,
+                               nominal_attributes=None,
+                               performance_metric='acc', random_state=None,
+                               remove_poor_atts=False, split_confidence=0.01,
+                               split_criterion='info_gain',
+                               stop_mem_management=False, tie_threshold=0.05,
+                               warning_detection_method=ADWIN(delta=0.01))
+Processed 1666 samples
+Accuracy: 0.7310924369747899
+Total time: 24.89116144180298 seconds
+Processed 3332 samples
+Accuracy: 0.7740096038415366
+Total time: 50.43293595314026 seconds
+Processed 4998 samples
+Accuracy: 0.7979191676670668
+Total time: 75.1764886379242 seconds
+Processed 6664 samples
+Accuracy: 0.7941176470588235
+Total time: 102.64401721954346 seconds
+Processed 8330 samples
+Accuracy: 0.7889555822328932
+Total time: 129.13107824325562 seconds
+Processed 9996 samples
+Accuracy: 0.7914165666266506
+Total time: 154.6158092021942 seconds
+Processed 10000 samples
+Accuracy: 0.7915
+Total time: 154.67177867889404 seconds
+
+
