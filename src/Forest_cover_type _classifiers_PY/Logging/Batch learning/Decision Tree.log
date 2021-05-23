@@ -1,0 +1,7 @@
+Classifier: Decision Tree
+Accuracy: 1.0
+Precision: 1.0
+Recall: 1.0
+F1-score: 1.0
+Kappa score: 1.0
+Execution time: 3.0470848083496094
