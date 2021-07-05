@@ -5,5 +5,5 @@ After an initial study, both online and batch learning techniques are employed o
 
 | Students/Group | Project Type | Predictive Models | Dataset | Folder Name |
 |:--------------:|:------------:|:-----------------:|---------|-------------|
-|  Michelangelo Esposito              |      Forest Cover Type        |  <h3>Online learning:</h3><ul><li>- [x] Random Forest</li><li>- [x] Decision Tree   </li></ul> |   [Link](https://archive.ics.uci.edu/ml/datasets/covertype)            |     ./Michelangelo-Esposito-Forest-CoverType        |
+|  Michelangelo Esposito              |      Forest Cover Type        |  <h3>Online learning:</h3><ul><li>- [x] Adaptive Random Forest</li><li>- [x] Hoeffding Tree   </li><li>- [x] Naive Bayes</li></ul><h3>Batech learning:</h3><ul><li>- [x] Random Forest</li><li>- [x] Decision Tree   </li><li>- [x] Naive Bayes</li></ul> |   [Link](https://archive.ics.uci.edu/ml/datasets/covertype)            |     ./Michelangelo-Esposito-Forest-CoverType        |
 |                |              |                   |         |             |
