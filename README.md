@@ -5,5 +5,5 @@ After an initial study, both online and batch learning techniques are employed o
 
 | Students/Group | Project Type | Predictive Models | Dataset | Folder Name |
 |:--------------:|:------------:|:-----------------:|---------|-------------|
-|  John Smith              |      Forest Cover Type        |  <ul><li>- [x] Random Forest</li><li>- [x] Decision Tree   </li></ul> |   [Link](https://www.dataset.com)            |     ./John-Smith-Forest-CoverType        |
+|  Michelangelo Esposito              |      Forest Cover Type        |  <ul><li>- [x] Random Forest</li><li>- [x] Decision Tree   </li></ul> |   [Link](https://archive.ics.uci.edu/ml/datasets/covertype)            |     ./Michelangelo-Esposito-Forest-CoverType        |
 |                |              |                   |         |             |
