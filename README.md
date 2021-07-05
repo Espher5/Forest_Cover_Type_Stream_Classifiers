@@ -49,7 +49,6 @@ The dataset used for this study is available for free on the UCI Machine Learnin
     - Douglas-fir: 17367.
     - Krummholz: 20510.
 
-
 Before employing classification techniques on the dataset, its composition was analyzed, as well as the distribution of the various features, and its values.
 **Note** that, for the online classification part, no balancing or optimization techniques were considered, since it was assumed that the entries from the dataset were being streamed in real time from a source of some kind, such as iot sensors. On the other hand, for the batch learning approach we aimed at obtaining the best results by applying various pre-processing techniques.
 
@@ -61,6 +60,20 @@ First of all, the distribution of the various values was analyed. It was immedia
 - Douglas-fir: 2.99%
 - Aspen: 1.63%
 - Cottonwood/Willow: 0.47%
+
+The next thing to look out for was skewness. Skewness is a quantifiable measure of how distorted a data sample is from the normal distribution. While most of the attribute present minimal skewness, some of the soil types suffer much more from this problem, especially “Soil_Type15”.
+
+The distribution of the 40 soil types has also been analysed, finding an unbalanced distribution mostly in favour of the two most present tree types as shown in the next graph
+<p align="center">
+    <img src="./Figures/README/Correlation.png" alt="Correlation" />
+</p>
+
+
+A final aspect worth considering is the correlation between the different features. Correlation explains how one or more features are related to each other; it gives us a general idea about the degree of the relationship of two features.
+The next table is the result of computing correlation values among the continuous attributes of our dataset.
+<p align="center">
+    <img src="./Figures/README/Skewness.png" alt="Skewness" />
+</p>
 
 
 The following preprocessing steps have been performed on the dataset:
