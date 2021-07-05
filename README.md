@@ -61,18 +61,22 @@ First of all, the distribution of the various values was analyed. It was immedia
 - Aspen: 1.63%
 - Cottonwood/Willow: 0.47%
 
-The next thing to look out for was skewness. Skewness is a quantifiable measure of how distorted a data sample is from the normal distribution. While most of the attribute present minimal skewness, some of the soil types suffer much more from this problem, especially “Soil_Type15”.
-
-The distribution of the 40 soil types has also been analysed, finding an unbalanced distribution mostly in favour of the two most present tree types as shown in the next graph
 <p align="center">
-    <img src="./Figures/README/Correlation.png" alt="Correlation" />
+    <img src="./Figures/README/Distribution.png" alt="Distribution" />
 </p>
+
+The next thing to look out for was skewness. Skewness is a quantifiable measure of how distorted a data sample is from the normal distribution. While most of the attribute present minimal skewness, some of the soil types suffer much more from this problem, especially “Soil_Type15”.
+<p align="center">
+    <img src="./Figures/README/Skewness.png" alt="Skewness" />
+</p>
+
+The distribution of the 40 soil types has also been analysed, finding an unbalanced distribution mostly in favour of the two most present tree types.
 
 
 A final aspect worth considering is the correlation between the different features. Correlation explains how one or more features are related to each other; it gives us a general idea about the degree of the relationship of two features.
 The next table is the result of computing correlation values among the continuous attributes of our dataset.
 <p align="center">
-    <img src="./Figures/README/Skewness.png" alt="Skewness" />
+    <img src="./Figures/README/Correlation.png" alt="Correlation" />
 </p>
 
 
